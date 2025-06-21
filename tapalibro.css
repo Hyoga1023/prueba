@@ -1,132 +1,113 @@
-:root{
-    --primario-color: #f0f0f0;
-    --secundario-color: #000000;
-    --terciario-color: #A10D1E;
-    --cuaternario-color: #D4AF37;
-}
+:root {
+            --primario-color: #f0f0f0;
+            --secundario-color: #000000;
+            --terciario-color: #A10D1E;
+            --cuaternario-color: #D4AF37;
+        }
 
-.new-rocker-regular {
-  font-family: "New Rocker", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--primario-color);
+            overflow-x: hidden;
+        }
 
-.princess-sofia-regular {
-  font-family: "Princess Sofia", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+        .book {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            perspective: 2000px;
+        }
 
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: var(--primario-color);
-}
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('img/Tapa.jpg') no-repeat center center/cover;
+            z-index: 2;
+            transform-origin: left;
+            transition: transform 1s ease-in-out;
+        }
 
-.titulos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+        .titulos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
 
-.titulo1 {
-    padding-top: 200px;
-    font-family: "New Rocker", system-ui;
-    font-size: 2.5rem;
-    color: var(--secundario-color); 
-    text-align: center;
-    margin-bottom: 20px;
-    -webkit-text-stroke: 0.1px var(--terciario-color); 
-    -moz-text-stroke: 0.1px var(--cuaternario-color); 
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
-}
+        .titulo1 {
+            padding-top: 15vh;
+            font-family: "New Rocker", system-ui;
+            font-size: 2.5rem;
+            color: var(--secundario-color);
+            text-align: center;
+            margin-bottom: 20px;
+            -webkit-text-stroke: 0.1px var(--terciario-color);
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+        }
 
-.titulo2{
-    padding-top: 250px;
-    font-family: "New Rocker", system-ui;
-    font-size: 3.5rem;
-    color: var(--secundario-color); 
-    text-align: center;
-    margin-bottom: 20px;
-    -webkit-text-stroke: 0.09px var(--terciario-color); 
-    -moz-text-stroke: 0.09px var(--cuaternario-color); 
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
-}
+        .titulo2 {
+            padding-top: 10vh;
+            font-family: "New Rocker", system-ui;
+            font-size: 3.5rem;
+            color: var(--secundario-color);
+            text-align: center;
+            margin-bottom: 20px;
+            -webkit-text-stroke: 0.09px var(--terciario-color);
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+        }
 
-.book {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    perspective: 2000px;
-}
+        #openBook {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            font-family: "Princess Sofia", cursive;
+            font-size: 1.2rem;
+            background-color: #A10D1E;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
 
-.cover {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url('img/Tapa.jpg') no-repeat center/cover;
-  background-size: cover; 
-  background-position: center; 
-  transform-origin: left;
-  transition: transform 1s ease-in-out;
-  z-index: 2;
-}
+        #openBook:hover {
+            background-color: #7E191B;
+        }
 
-.pages {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  z-index: 1;
-}
+        .open .cover {
+            transform: rotateY(-180deg);
+        }
 
-.open .cover {
-  transform: rotateY(-180deg);
-}
-#openBook:hover {
-  background-color: #7E191B; 
-}
+        .open #openBook {
+            opacity: 0;
+            pointer-events: none;
+        }
 
-.open #openBook {
-  opacity: 0; 
-  pointer-events: none;
-}
-
-#openBook {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 12px 20px;
-    font-family: "Princess Sofia", cursive;
-    font-size: 1.2rem;
-    background-color: #A10D1E;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000; 
-    transform: translateZ(50px); 
-}
-
-@media (max-width: 480px) {
-    .titulo1 {
-        padding-top: 120px; 
-        font-size: 2rem;
-    }
-    .titulo2 {
-        padding-top: 150px;
-        font-size: 3rem;
-    }
-    
-    #openBook {
-        font-size: 1rem;
-        padding: 10px 16px;
-        bottom: 10px;
-        right: 10px;
-    }
-}
+        @media (max-width: 480px) {
+            .titulo1 {
+                padding-top: 12vh;
+                font-size: 2rem;
+            }
+            .titulo2 {
+                padding-top: 8vh;
+                font-size: 3rem;
+            }
+            
+            #openBook {
+                font-size: 1rem;
+                padding: 10px 16px;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
