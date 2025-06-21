@@ -23,8 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden; 
+    min-height: 100vh;
     background-color: var(--primario-color);
 }
 
@@ -59,10 +58,10 @@ body {
 }
 
 .book {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  perspective: 2000px; 
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    perspective: 2000px;
 }
 
 .cover {
@@ -70,8 +69,8 @@ body {
   width: 100%;
   height: 100%;
   background: url('img/Tapa.jpg') no-repeat center/cover;
-  background-size: cover; /* Asegura que la imagen cubra todo el espacio */
-  background-position: center; /* Centra la imagen */
+  background-size: cover; 
+  background-position: center; 
   transform-origin: left;
   transition: transform 1s ease-in-out;
   z-index: 2;
@@ -98,26 +97,36 @@ body {
 }
 
 #openBook {
-  position: fixed;  /* Usa fixed en lugar de absolute para asegurar visibilidad */
-  bottom: 20px;
-  right: 20px;
-  padding: 12px 20px;
-  font-family: "Princess Sofia", cursive;
-  font-size: 1.2rem;
-  background-color: #A10D1E;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  z-index: 100; /* Asegúrate de que esté por encima de todo */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    font-family: "Princess Sofia", cursive;
+    font-size: 1.2rem;
+    background-color: #A10D1E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+    transform: translateZ(50px); 
 }
 
 @media (max-width: 480px) {
-  #openBook {
-    font-size: 1rem;
-    padding: 10px 16px;
-    bottom: 15px;
-    right: 15px;
-  }
+    .titulo1 {
+        padding-top: 120px; 
+        font-size: 2rem;
+    }
+    .titulo2 {
+        padding-top: 150px;
+        font-size: 3rem;
+    }
+    
+    #openBook {
+        font-size: 1rem;
+        padding: 10px 16px;
+        bottom: 10px;
+        right: 10px;
+    }
 }
