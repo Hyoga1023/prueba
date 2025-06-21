@@ -12,7 +12,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: var(--primario-color);
+            background-color: var(--secundario-color);
             overflow-x: hidden;
         }
 
