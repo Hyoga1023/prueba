@@ -5,7 +5,11 @@
   --terciario-color: #A10D1E;
   --cuaternario-color: #D4AF37;
 }
-
+.princess-sofia-regular {
+  font-family: "Princess Sofia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   font-family: "Princess Sofia", cursive;
   background-color: var(--primario-color);
@@ -21,16 +25,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('img/Fondo_blanco_estilizado.jpg');
+  background-image: url('img/Fondo_Negro\ _Rosas.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.5;
-  z-index: -1;
+  z-index: -1; /* Mantiene la imagen detrás del contenido */
 }
 
 main {
-  z-index: 1;
   flex: 1;
   padding: 20px;
 }
@@ -41,44 +43,32 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
-}
-
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 h1 {
-  color: white;
-  text-shadow: 1px 1px 3px black;
-  z-index: 1;
+  color: var(--primario-color);
+  text-shadow: 1px 1px 3px var(--secundario-color);
   font-family: "Princess Sofia", cursive;
   font-size: 3em;
   font-weight: 400;
   text-align: center;
 }
-
+p{
+  color: var(--primario-color);
+  font-size: 1.5rem;
+  font-weight: 100;
+}
 .scroll {
   position: fixed;
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999;
 }
 
 .botón_avanzar {
   position: fixed;
   bottom: 30%;
   right: 30%;
-  z-index: 3;
 }
 
 .btn-siguiente {
@@ -112,14 +102,12 @@ h1 {
 }
 
 header {
-  z-index: 1;
   background: transparent;
   padding: 20px;
   text-align: center;
 }
 
 footer {
-  z-index: 1;
   background: transparent;
   padding: 10px;
   text-align: center;
