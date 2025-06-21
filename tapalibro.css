@@ -96,18 +96,18 @@
 
         @media (max-width: 480px) {
             .titulo1 {
-                padding-top: 12vh;
-                font-size: 2rem;
+                padding-top: 1vh;
+                font-size: 2.5rem;
             }
             .titulo2 {
-                padding-top: 8vh;
-                font-size: 3rem;
+                padding-top: 23vh;
+                font-size: 3.5rem;
             }
             
             #openBook {
                 font-size: 1rem;
                 padding: 10px 16px;
-                bottom: 15px;
-                right: 15px;
+                bottom: 50px;
+                right: 20px;
             }
         }
