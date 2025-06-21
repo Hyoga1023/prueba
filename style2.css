@@ -1,0 +1,29 @@
+/* style.css */
+:root {
+  --primario-color: #f0f0f0;
+  --secundario-color: #000000;
+  --terciario-color: #A10D1E;
+  --cuaternario-color: #D4AF37;
+}
+
+body {
+  font-family: "Princess Sofia", cursive;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('img/fondo_combinado.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  z-index: -1;
+}
