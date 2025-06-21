@@ -76,8 +76,8 @@ h1 {
 
 .botón_avanzar {
   position: fixed;
-  bottom: 4%;
-  right: 7%;
+  bottom: 15%;
+  right: 20%;
   z-index: 3;
 }
 
