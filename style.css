@@ -65,7 +65,7 @@ h1 {
   text-align: center;
 }
 p{
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--primario-color);
 }
 .scroll {
@@ -84,9 +84,9 @@ p{
 }
 
 .btn-siguiente {
-  padding: 10px 15px;
+  padding: 15px 20px;
   font-family: "Princess Sofia", cursive;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   background-color: var(--terciario-color);
   color: #fff;
   border: none;
