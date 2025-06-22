@@ -67,3 +67,4 @@ gsap.utils.toArray("section").forEach((section, i) => {
     );
   }
 });
+
