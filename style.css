@@ -65,6 +65,7 @@ body {
   position: fixed;
   color: var(--primario-color);
   top: 90%;
+  margin-bottom: 50px;
   left: 45%;
   transform: translate(-50%, -50%);
   z-index: 1000;
