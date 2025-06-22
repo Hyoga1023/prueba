@@ -10,6 +10,7 @@
             padding: 0;
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
             background-color: var(--secundario-color);
@@ -93,7 +94,18 @@
             opacity: 0;
             pointer-events: none;
         }
-
+        footer {
+            position: fixed;
+            background-color: transparent;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        footer img {
+            width: 100px;
+            height: auto;
+        }
         @media (max-width: 480px) {
             .titulo1 {
                 padding-top: 0.5vh;
