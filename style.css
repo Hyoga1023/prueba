@@ -27,11 +27,19 @@ body {
   background-attachment: local;
   z-index: -1;
 }
-#carouselExampleIndicators{
+#carouselExampleIndicators {
   position: relative;
   margin-top: 200px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
+  min-height: 300px; 
+  display: flex;
+  align-items: center; 
 }
+
+.carousel-inner {
+  height: 100%; 
+}
+
 .carousel-control-prev, .carousel-control-next {
   top: 90%;
 }
