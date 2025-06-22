@@ -30,7 +30,7 @@ body {
 #carouselExampleIndicators {
   position: relative;
   margin-top: 200px;
-  margin-bottom: 170px;
+  margin-bottom: 200px;
   min-height: 300px; 
   display: flex;
   align-items: center; 
@@ -65,7 +65,6 @@ body {
   position: fixed;
   color: var(--primario-color);
   top: 90%;
-  margin-bottom: 50px;
   left: 45%;
   transform: translate(-50%, -50%);
   z-index: 1000;
