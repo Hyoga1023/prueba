@@ -27,7 +27,17 @@ body {
   background-attachment: local;
   z-index: -1;
 }
-
+#carouselExampleIndicators{
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+.carousel-control-prev, .carousel-control-next {
+  top: 90%;
+}
+.carousel-indicators {
+  display: none;
+}
 main {
   z-index: 1;
   flex: 1;

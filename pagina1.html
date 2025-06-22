@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="img/Fondo_blanco_estilizado.jpg" as="image" />
     <link rel="stylesheet" href="reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./img/Mariposa.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,35 +24,108 @@
   <body>
     <div class="background"></div>
     <header>
-      <h1>Amada Gabrielle</h1><br>
-      <p>
-        Hoy celebramos tus 15 años, y no podemos evitar mirar atrás y recordar
-        cómo todo comenzó contigo. Fuiste nuestro primer gran milagro, esa
-        pequeña personita que vino al mundo para enseñarnos qué significa amar
-        sin condiciones. Contigo aprendimos a ser padres.</p>
-        
-        <p>Nos enseñaste a
-        enfrentarnos a lo desconocido, a cometer errores y a mejorar. Contigo
-        dimos nuestros primeros pasos en este camino lleno de desafíos, risas,
-        desvelos y momentos inolvidables. Nos has mostrado lo que significa ser
-        pacientes, luchar por lo que queremos y nunca rendirnos.</p> 
-        
-        <p>Cada día nos
-        inspiras con tu valentía, tu sensibilidad y esa chispa que te hace
-        única. Has crecido frente a nuestros ojos y florecido en una joven
-        hermosa, maravillosa, llena de sueños y metas. Hoy no solo celebramos tus 15
-        años, celebramos a la hija increíble que eres, la hermana
-        amorosa que cuida con el corazón, y la persona excepcional que estamos
-        viendo florecer.</p> 
-        
-        <p>Gracias por enseñarnos tanto, por ser nuestra guía en
-        esta hermosa aventura de ser padres, y por llenar nuestras vidas de
-        alegría y propósito. Siempre estaremos a tu lado, apoyándote en cada
-        paso, aplaudiendo tus logros y aprendiendo contigo. Que este nuevo
-        capítulo sea tan especial como tú lo eres para nosotros. Con todo
-        nuestro amor,
-      </p><br>
-      <p><strong>Papá y Mamá</strong> </p>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h1>Amada Gabrielle</h1>
+          </div>
+          <div class="carousel-item">
+            <p>
+              Hoy celebramos tus 15 años, y no podemos evitar mirar atrás y
+              recordar cómo todo comenzó contigo. Fuiste nuestro primer gran
+              milagro, esa pequeña personita que vino al mundo para enseñarnos
+              qué significa amar sin condiciones. Contigo aprendimos a ser
+              padres.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p>
+              Nos enseñaste a enfrentarnos a lo desconocido, a cometer errores y
+              a mejorar. Contigo dimos nuestros primeros pasos en este camino
+              lleno de desafíos, risas, desvelos y momentos inolvidables. Nos
+              has mostrado lo que significa ser pacientes, luchar por lo que
+              queremos y nunca rendirnos.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p>
+              Cada día nos inspiras con tu valentía, tu sensibilidad y esa
+              chispa que te hace única. Has crecido frente a nuestros ojos y
+              florecido en una joven hermosa, maravillosa, llena de sueños y
+              metas. Hoy no solo celebramos tus 15 años, celebramos a la hija
+              increíble que eres, la hermana amorosa que cuida con el corazón, y
+              la persona excepcional que estamos viendo florecer.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p>
+              Gracias por enseñarnos tanto, por ser nuestra guía en esta hermosa
+              aventura de ser padres, y por llenar nuestras vidas de alegría y
+              propósito. Siempre estaremos a tu lado, apoyándote en cada paso,
+              aplaudiendo tus logros y aprendiendo contigo. Que este nuevo
+              capítulo sea tan especial como tú lo eres para nosotros. Con todo
+              nuestro amor,<br /><strong>Papá y Mamá</strong>
+            </p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 100px;">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <path d="M10 15 L20 25 L30 15" stroke="#333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
     </header>
     <main>
       <section>
@@ -76,6 +155,11 @@
     <footer>
       <p>Pie de página del proyecto</p>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
     <script src="gsap.js" type="module"></script>
   </body>
 </html>
