@@ -126,7 +126,6 @@ p{
 }
 
 .botón_avanzar {
-  position: fixed;
   bottom: 30%;
   right: 30%;
   z-index: 3;
