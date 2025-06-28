@@ -2,18 +2,27 @@
 import { gsap } from "https://cdn.skypack.dev/gsap";
 import { ScrollTrigger } from "https://cdn.skypack.dev/gsap/ScrollTrigger";
 
-// Exponer gsap globalmente para GSAPInfoBar
 window.gsap = gsap;
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Lista de imágenes de la carpeta img/
 const images = [
-  "img/IMG_20240609_125053906_HDR_AE.jpg",
-  "img/Fondo_blanco_estilizado.jpg",
-  "img/IMG_20240609_125053906_HDR_AE.jpg",
-  "img/Fondo_blanco_estilizado.jpg",
-  "img/IMG_20240609_125053906_HDR_AE.jpg"
+  "img/0_Años.jpg",
+  "img/1_Años.jpg",
+  "img/2_Años.jpg",
+  "img/3_Años.jpg",
+  "img/4_Años.jpg",
+  "img/5_Años.jpg",
+  "img/6_Años.jpg",
+  "img/7_Años.jpg",
+  "img/8_Años.jpg",
+  "img/9_Años.jpg",
+  "img/10_Años.jpg",
+  "img/11_Años.jpg",
+  "img/12_Años.jpg",
+  "img/13_Años.jpg",
+  "img/14_Años.jpg",
+  "img/15_Años.jpg"
 ];
 
 let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);

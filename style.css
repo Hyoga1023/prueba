@@ -28,24 +28,19 @@ body {
   z-index: -1;
 }
 
-/* SOLUCIÓN MÍNIMA: Solo altura fija y centrado de texto */
 #carouselExampleIndicators {
   position: relative;
   margin-top: 200px;
   margin-bottom: 200px;
-  min-height: 400px; /* Solo altura mínima fija */
+  min-height: 400px; 
 }
 
-/* NO tocar .carousel-inner - dejar que Bootstrap lo maneje */
-
-/* Solo agregar centrado al contenido SIN cambiar display */
 .carousel-item {
-  min-height: 400px; /* Altura mínima consistente */
-  text-align: center; /* Centrado horizontal */
-  padding: 40px 20px; /* Espaciado para centrado vertical visual */
+  min-height: 400px; /
+  text-align: center; 
+  padding: 40px 20px; 
 }
 
-/* Centrado del contenido específico */
 .carousel-item h1,
 .carousel-item p {
   margin-left: auto;
@@ -61,7 +56,6 @@ body {
   display: none;
 }
 
-/* Animación de titileo */
 @keyframes pulse {
   0%, 100% {
     transform: scale(1);
@@ -99,7 +93,10 @@ main {
   flex: 1;
   padding: 20px;
 }
-
+main .inicio_fotos{
+  font-family: "Princess Sofia", cursive;
+  color: var(--primario-color);
+}
 section {
   position: relative;
   height: 100vh;
