@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   audio.autoplay = true;
 
   // Control de volumen (opcional)
-  audio.volume = 0.2; // Rango: 0.0 a 1.0
+  audio.volume = 0.3; // Rango: 0.0 a 1.0
 
   audio.play().catch(error => {
     console.warn("Reproducción bloqueada por el navegador:", error);

@@ -1,0 +1,39 @@
+:root {
+  --primario-color: #f0f0f0;
+  --secundario-color: #000000;
+  --terciario-color: #a10d1e;
+  --cuaternario-color: #d4af37;
+  --quinario-color: #d9a3a3;
+  --shadow-color: rgba(201, 193, 193, 0.8);
+}
+
+body {
+  font-family: "Princess Sofia", cursive;
+  color: var(--secundario-color);
+  position: relative;
+  min-height: 100vh;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("img/Playa.jpeg") no-repeat center/cover;
+  background-attachment: local;
+  z-index: -1;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primario-color);
+  align-items: center;
+  padding: 7px;
+  width: 80%; 
+  height: 120px;
+  margin-top: 20px;
+}
