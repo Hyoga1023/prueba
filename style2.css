@@ -54,16 +54,20 @@ header {
 
 .encabezado {
   font-family: "Princess Sofia", cursive;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 5px 7px 10px;
   margin-top: 20px;
   background-color: var(--secundario-color);
   color: var(--primario-color);
   border-radius: 10px;
+  border: 1px solid var(--quinario-color);
+  gap:7px;
   text-align: center;
   text-shadow: 4px 4px 10px var(--shadow-color);
 }
-
+.texto_encabezado{
+  margin: 10px 0 10px;
+}
 .card_videos {
   display: flex;
   flex-direction: column;
