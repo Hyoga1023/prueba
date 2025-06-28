@@ -34,6 +34,10 @@ header {
   align-items: center;
   padding: 7px;
   width: 80%; 
-  height: 120px;
+  height: 125px;
   margin-top: 20px;
+}
+.encabezado{
+    font-family: "Princess Sofia", cursive;
+    font-size: 1.2rem;
 }
