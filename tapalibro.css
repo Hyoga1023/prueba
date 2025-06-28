@@ -103,7 +103,7 @@
             z-index: 1000;
         }
         footer img {
-            width: 100px;
+            width: 125px;
             height: auto;
         }
         @media (max-width: 480px) {
