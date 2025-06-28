@@ -45,6 +45,7 @@
         }
 
         .titulo1 {
+            margin-top: 50px;
             padding-top: 50vh;
             font-family: "New Rocker", system-ui;
             font-size: 2.5rem;
@@ -55,8 +56,8 @@
         }
 
         .titulo2 {
-            margin-top: 20px;
-            padding-top: 10vh;
+            margin-top: 10px;
+            padding-top: 5vh;
             font-family: "Princess Sofia", cursive;
             font-size: 3.5rem;
             color: var(--primario-color);
@@ -118,7 +119,7 @@
                 font-size: 2.5rem;
             }
             .titulo2 {
-                padding-top: 25vh;
+                padding-top: 22vh;
                 font-size: 2.5rem;
             }
             .titulo2b {
