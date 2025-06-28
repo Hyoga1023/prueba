@@ -57,20 +57,18 @@
         .titulo2 {
             margin-top: 20px;
             padding-top: 10vh;
-            font-family: "New Rocker", system-ui;
+            font-family: "Princess Sofia", cursive;
             font-size: 3.5rem;
-            color: #d4d0d0;
-            -webkit-text-stroke: 0.09px var(--terciario-color);
+            color: var(--primario-color);
             text-align: center;
             text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
         }
         .titulo2b {
             padding-top: 0;
-            font-family: "New Rocker", system-ui;
+            font-family: "Princess Sofia", cursive;
             font-size: 3.5rem;
-            color: #d4d0d0;
-            text-align: center;
-            -webkit-text-stroke: 0.09px var(--secundario-color);
+            color: var(--primario-color);
+            text-align: center; 
             text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
         }
 
