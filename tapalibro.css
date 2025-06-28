@@ -61,7 +61,15 @@
             font-size: 3.5rem;
             color: var(--secundario-color);
             text-align: center;
-            margin-bottom: 20px;
+            -webkit-text-stroke: 0.09px var(--terciario-color);
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+        }
+        .titulo2b {
+            padding-top: 0;
+            font-family: "New Rocker", system-ui;
+            font-size: 3.5rem;
+            color: var(--secundario-color);
+            text-align: center;
             -webkit-text-stroke: 0.09px var(--terciario-color);
             text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
         }
@@ -113,9 +121,13 @@
             }
             .titulo2 {
                 padding-top: 25vh;
-                font-size: 3.5rem;
+                font-size: 2rem;
             }
-            
+            .titulo2b {
+                padding-top: 0;
+                margin-bottom: 20px;
+                font-size: 2rem;
+            }
             #openBook {
                 font-size: 1.3rem;
                 padding: 15px 20px;
