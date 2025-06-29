@@ -10,7 +10,6 @@
 body {
   font-family: "Princess Sofia", cursive;
   color: var(--secundario-color);
-  position: relative;
   min-height: 100vh;
   padding: 10px 0;
   display: flex;
@@ -27,6 +26,20 @@ body {
   background-attachment: local;
   z-index: -1;
 }
+header {
+  top: 0; /* Ajusta la posición superior si es necesario */
+  left: 0; /* Lo alinea completamente a la izquierda */
+  right: unset; /* Asegúrate de que no esté afectado por "right" */
+  width: 100%; /* Asegúrate de que ocupe todo el ancho */
+  background-color: var(--primario-color); /* Mantén el estilo que necesitas */
+  padding: 7px;
+  height: 120px;
+}
+.encabezado {
+  font-family: "Princess Sofia", cursive;
+  font-size: 1.5rem;
+}
+
 main{
   display: flex;
   flex-direction: column;
@@ -35,35 +48,28 @@ main{
   height: auto;
 }
 main h1 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   color: var(--secundario-color); 
   -webkit-text-stroke: 0.01px var(--primario-color);
-}
-header {
-  display: flex;
-  background-color: var(--primario-color);
-  padding: 7px;
-  width: 80%;
-  border-radius: 10px;
-  height: 120px;
-  margin: 20px auto;
-}
-
-.encabezado {
-  font-family: "Princess Sofia", cursive;
-  font-size: 1.2rem;
 }
 
 .global_content {
   display: flex;
   flex-direction: column;
   padding: 0;
+  background: rgba(245, 211, 19, 0.3); 
+  backdrop-filter: blur(1px);
   margin: 40px auto 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 100%;
   max-width: 100%;
+}
+.global_content p{
+  font-size: 1.2rem;
+  color: var(--secundario-color);
+  margin: 10px 0;
 }
 .contenedor_mapa{
   display: flex;
@@ -107,6 +113,21 @@ header {
 .leaflet-popup-content {
   font-family: "Princess Sofia", cursive;
   color: var(--secundario-color);
+}
+.video-container {
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px; /* Limita el ancho máximo */
+}
+
+.video-container h2 {
+  font-size: 1.5rem;
+  color: var(--secundario-color);
+  margin-bottom: 15px;
 }
 
 /* Responsive para dispositivos móviles */
