@@ -33,7 +33,11 @@ main{
   flex: 1;
   width: 100%;
   height: auto;
-
+}
+main h1 {
+  font-size: 2rem;
+  color: var(--secundario-color); 
+  -webkit-text-stroke: 0.01px var(--primario-color);
 }
 header {
   display: flex;
@@ -64,6 +68,7 @@ header {
 .contenedor_mapa{
   display: flex;
   padding: 0 7px;
+  margin-top: 10px;
   color: var(--primario-color);
   justify-content: center;
   text-align: center;
